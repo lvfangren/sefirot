@@ -31,6 +31,13 @@ export default defineComponent({
     return useSpec({
       props: [
         {
+          name: 'size',
+          type: "'mini' | 'small'",
+          required: false,
+          default: "'small'",
+          description: 'The size of the switch.'
+        },
+        {
           name: 'name',
           type: 'String',
           required: false,
@@ -71,6 +78,13 @@ export default defineComponent({
           required: false,
           default: 'null',
           description: 'The value of the input. It must be `true` or `false`.'
+        },
+        {
+          name: 'validation',
+          type: 'Validation',
+          required: false,
+          default: 'null',
+          description: 'You can pass Validation object to let input display any errors.'
         }
       ],
 

@@ -31,6 +31,13 @@ export default defineComponent({
     return useSpec({
       props: [
         {
+          name: 'size',
+          type: "'mini' | 'small'",
+          required: false,
+          default: "'small'",
+          description: 'The size of the switch.'
+        },
+        {
           name: 'name',
           type: 'String',
           required: false,
